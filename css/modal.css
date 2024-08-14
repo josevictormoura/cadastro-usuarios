@@ -1,0 +1,158 @@
+/* modal */
+.modal-create-user{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.624);
+}
+  
+.modal-create-user.active{
+    display: flex;
+}
+  
+#form{
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+  
+#form .container-filds{
+    display: flex;
+    gap: 20px;
+}
+  
+#form .container-filds div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+#form label{
+    font-size: 12px;
+    font-weight: bold;
+}
+  
+#form input{
+    border: none;
+    border: solid 1px grey;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+  
+#form input:focus{
+    border-color: #48cfff;
+}
+  
+#form .container-fild-cidade{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+  
+#form ion-icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 23px;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+}
+  
+#form ion-icon:hover{
+    background-color: red;
+    color: white;
+}
+  
+#form button{
+    /* max-width: max-content; */
+    width: 150px;
+    align-self: center;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,  #1FA2FF, #12D8FA);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* modal delete treino */
+
+.modal-confirm-delele{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.624);
+  }
+  
+.modal-confirm-delele.active{
+    display: flex;
+}
+  
+.container-delete{
+    /* background-color: rgb(27, 26, 26); */
+    
+    color: black;
+    background-color: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.container-delete h5{
+    font-size: 15px;
+    border-bottom: 0.1px solid black;
+    padding-bottom: 20px;
+}
+  
+.container-delete div{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;  
+}
+  
+.container-delete button{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.container-delete .btn-delete{
+    background-color: red;
+}
+  
+.container-delete .btn-cancel-delete{
+    background-color: transparent;
+    /* border: solid 1px grey; */
+    /* color: black; */
+    color: white;
+    background-color: grey;
+}
+  
+.delete-name{
+    font-weight: bold;
+}
