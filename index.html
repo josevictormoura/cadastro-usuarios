@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <title>Controle de Usuarios</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <div>
+        <img src="img/cadastro.png" alt="" width="80" height="80">
+      </div>
+      <div>
+        <h1 class="logo">Controle de Usuários</h1>
+        <span class="descricao">Gerencie e cadastre novos usuários</span>
+      </div>
+    </div>
+  </header>
+  <div class="wrapper">
+    <div class="header-table">
+      <div class="container-add-linha">
+        <button class="btn-new-user">
+          <ion-icon name="add-outline"></ion-icon>
+        </button>
+        <span>Novo usuário</span>
+      </div>
+      <label class="header-search">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="text" id="search" class="input">
+          <span>Buscar nome</span>
+      </label>
+    </div>
+    <div class="wrapper-table">
+      <table class="table" id="table">
+        <thead class="thead">
+          <tr class="thead-tr">
+            <th>#</th>
+            <th>NOME</th>
+            <th>EMAIL</th>
+            <th>TELEFONE</th>
+            <th>DATA</th>
+            <th>CIDADE</th>
+            <th>OPTIONS</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="modal-create-user">
+    <form id="form">
+      <ion-icon name="close-outline" id="btn-close-modal"></ion-icon>
+      <h2>Adicionar Usuário</h2>
+      <div class="container-filds">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" data-index="new" placeholder="nome" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="email" required>
+        </div>
+      </div>
+      <div class="container-filds">
+        <div>
+            <label for="Telefone">Telefone</label>
+            <input type="number" id="telefone" placeholder="telefone" required>
+        </div>
+        <div>
+            <label for="data">Data</label>
+            <input type="date" id="data" placeholder="data" required>
+        </div>
+      </div>
+      <div class="container-fild-cidade">
+        <label for="descanso">Cidade</label>
+        <input type="text" id="cidade" placeholder="cidade" required>
+      </div>
+      <button>Salvar</button>
+    </form>
+    </div>
+    <div class="modal-confirm-delele">
+      <div class="container-delete">
+        <h5>Exluir usuário?</h5>
+        <p>Isso excluirá o usuário <span class="delete-name"></span></p>
+        <div>
+          <button class="btn-cancel-delete" id="cancel">Cancelar</button>
+          <button class="btn-delete" id="delete">Excluir</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
