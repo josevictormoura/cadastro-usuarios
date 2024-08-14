@@ -1,0 +1,98 @@
+/* table */
+.wrapper-table{
+    overflow-x: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+.tbody{
+    width: 100%;
+}
+
+.tbody-tr #name{
+    font-weight: 600;
+}
+
+.thead .thead-tr th{
+    border-bottom: solid 2px rgb(216, 216, 216);
+    padding-bottom: 5px;
+}
+
+.tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th{
+    border: none;
+    color: grey;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.tbody-tr td{
+    text-align: left;
+    padding: 5px 0 0 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.tbody .tbody-tr:hover{
+    background-color: rgba(179, 179, 179, 0.411);
+    transition: background-color 0.3s ease;
+}
+
+.tbody-tr div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.thead-tr th {
+    background-color: #f9f9f9;
+    font-weight: 700;
+}
+
+.tr-icons{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tr-icons ion-icon{
+    cursor: pointer;
+    padding: 8px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    border-radius: 50%;
+}
+
+.tr-icons ion-icon:focus {
+    outline: 2px solid #48cfff;
+    border-radius: 4px;
+}
+
+.tr-icons ion-icon[name="create-outline"]:hover {
+    background-color: #e0f7e0;
+    color: green;
+}
+
+.tr-icons ion-icon[name="trash-outline"]:hover {
+    background-color: #f7e0e0;
+    color: red;
+}
+
+.tr-icons ion-icon:hover{
+    cursor: pointer;
+}
