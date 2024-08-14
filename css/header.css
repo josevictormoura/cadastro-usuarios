@@ -1,0 +1,109 @@
+.wrapper{
+    max-width: 1000px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1000px;
+    width: 100%;
+    margin: -100px auto 10px auto;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+.header-container h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.header-container span{
+    color: white;
+    font-size: 12px;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    width: 250px;
+    background: #ececec;
+    position: relative;
+    cursor: text;
+}
+
+.header-search span{
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #a7a7a7;
+    margin: 20px;
+    cursor: text;
+    transition: all 200ms ease;
+    left: 20px;
+    
+}
+
+.header-search .span-activate{
+    font-size: 0.5em;
+    top: -15px;
+}
+
+.header-search .input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 10px 10px 37px;
+    font-size: 0.9em;
+    color: #343434;
+    border: solid 2px transparent;
+    background: #ececec;
+}
+
+.input {
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.input:focus{
+    border-color: #1f6dff;
+    background: #f9f9f9;
+    box-shadow: 0 0 0 3px rgba(31, 109, 255, 0.2);
+}
+
+
+.header-search ion-icon{
+    font-size: 25px;
+    color: #a7a7a7;
+    position: absolute;
+    padding-left: 5px;
+
+}
+
+@media (max-width: 620px) {
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-container h1, .header-container span {
+        margin: 5px 0;
+    }
+
+    .wrapper{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; 
+    }
+
+    .wrapper .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
