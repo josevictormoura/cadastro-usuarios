@@ -3,6 +3,8 @@
 # Gerenciamento de Usuários
 Este projeto é um Sistema de Gerenciamento de Usuários desenvolvido com HTML , CSS e JavaScript . O sistema permite que os usuários criem, atualizem, excluam e pesquisem dados de usuários, tudo isso enquanto persistem as informações no LocalStorage do navegador.
 
+Veja a aplicação em ação através do GitHub Pages: https://josevictormoura.github.io/cadastro-usuarios/
+
 ## Funcionalidades
 
 - Criar usuários: adicione novos usuários preenchendo um formulário com campos como nome, e-mail, telefone, data de nascimento e cidade.
